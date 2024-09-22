@@ -8,7 +8,7 @@ PHP is interpreted; in other words, it is not compiled, except when using tools 
 
 I humbly acknowledge that I am using ChatGPT to generate so much code on my own because it is a tool that allows me to study this language in great depth effectively.
 
-My goal is to differentiate the various ways to achieve the same result, questioning which one is the most optimal.
+In fact, my goal is to know various ways to achieve the same result, questioning which one is the most optimal. Example - ¿Should I use native php array like [1,2,3] or the ArrayObject to get data from an external API (depends)?
 
 ## Native PHP vs PHP Extensions/Modules
 
@@ -26,7 +26,7 @@ To know which modules/extensions are in your PHP installation, run:
 php -m
 ```
 
-## My Preinstalled PHP Modules
+## My Preinstalled PHP Modules by default on windows 11
 
 - **bcmath**: Funciones para cálculos matemáticos de precisión arbitraria.
 - **calendar**: Manipulación de calendarios y cálculo de fechas.
