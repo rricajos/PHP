@@ -16,7 +16,7 @@ print_r($porcion2);
 // Ejemplo 3: Extraer todo el array a partir de un índice
 $mi_array3 = array("uno", "dos", "tres", "cuatro");
 $porcion3 = array_slice($mi_array3, 1); // Desde el índice 1 hasta el final
-echo "\nEjemplo 3 (Extraer todo el array a partir de un índice):\n";
+echo "\nEjemplo 3 (Extraerr todo el array a partir de un índice):\n";
 print_r($porcion3);
 
 
