@@ -8,7 +8,7 @@ PHP is interpreted; in other words, it is not compiled, except when using tools 
 
 I humbly acknowledge that I am using ChatGPT to generate so much code on my own because it is a tool that allows me to study this language in great depth effectively.
 
-In fact, my goal is to know various ways to achieve the same result, questioning which one is the most optimal. Example - ¿Should I use native php array like [1,2,3] or the ArrayObject to get data from an external API (depends)?
+In fact, my goal is to know various ways to achieve the same result, questioning which one is the most optimal. Example - ¿Should I use native php array like [1,2,3] or the ArrayObject to get data from an external API?
 
 ## Native PHP vs PHP Extensions/Modules
 
