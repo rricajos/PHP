@@ -55,3 +55,50 @@ php -m
 - **xmlreader**: Lectura eficiente de XML mediante eventos.
 - **xmlwriter**: Escritura programática de documentos XML.
 - **zlib**: Compresión y descompresión de datos.
+
+## PHP Data Types on 64-bit Systems
+
+| Data Type         | Size (Bytes) | Minimum Value                  | Maximum Value                        |
+|-------------------|--------------|--------------------------------|--------------------------------------|
+| **Integer**       | 8            | -9,223,372,036,854,775,808     | 9,223,372,036,854,775,807            |
+| **Float (Double)**| 8            | -1.79769313486232E+308         | 1.79769313486232E+308                |
+| **Boolean**       | 1            | 0 (false)                      | 1 (true)                             |
+| **String**        | Variable     | 0 (empty string)               | Up to 2GB                            |
+| **Array**         | Variable     | 0 elements                     | Up to 2GB                            |
+| **Object**        | Variable     | N/A                            | N/A (depends on properties)          |
+| **Resource**      | Variable     | N/A                            | N/A (depends on the resource type)   |
+| **NULL**          | 0            | N/A                            | N/A                                  |
+
+## PHP Data Types on 32-bit Systems
+
+| Data Type         | Size (Bytes) | Minimum Value                    | Maximum Value                           |
+|-------------------|--------------|----------------------------------|-----------------------------------------|
+| **Integer**       | 4            | -2,147,483,648                   | 2,147,483,647                           |
+| **Float (Double)**| 8            | -1.79769313486232E+308           | 1.79769313486232E+308                   |
+| **Boolean**       | 1            | 0 (false)                        | 1 (true)                                |
+| **String**        | Variable     | 0 (empty string)                 | Up to 2GB (depends on available memory) |
+| **Array**         | Variable     | 0 elements                       | Up to 2GB (depends on available memory) |
+| **Object**        | Variable     | N/A                              | N/A (depends on the object properties)  |
+| **Resource**      | Variable     | N/A                              | N/A (depends on the resource type)      |
+| **NULL**          | 0            | N/A                              | N/A                                     |
+
+## UTF 8 Character Sizes Table for PHP 8
+
+| Range                           | Size            | Examples               |
+|---------------------------------|-----------------|------------------------|
+| ASCII (0-127)                   | 1 byte          | `'a'`, `'b'`, `'1'`    |
+| Chars extended (128-2047)       | 2 bytes         | `'ñ'`, `'é'`           |
+| Chars of 3 bytes (2048-65535)   | 3 bytes         | `ñ`, `ç`, `ú`          |
+| Chars of 4 bytes (65536 y más)  | 4 bytes         | `🌍`, `𐍈`             |
+
+## UTF 8 Char Sizes by Architecture examples
+
+| Character      | 64 bits arch       | 32 bits arch       |
+|----------------|--------------------|--------------------|
+| ASCII `'a'`    | 24 bytes           | 14 bytes           |
+| UTF-8 `'ñ'`    | 25 bytes           | 15 bytes           |
+| UTF-8 `'é'`    | 26 bytes           | 16 bytes           |
+| UTF-8 `'🌍'`   | 27 bytes           | 17 bytes           |
+
+
+
