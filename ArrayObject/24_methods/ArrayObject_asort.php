@@ -28,4 +28,3 @@ foreach ($arrayObject as $key => $value) {
 // Use getArrayCopy() to display the underlying array
 $copy = $arrayObject->getArrayCopy();
 print_r($copy);  // Outputs the array representation
-?>
