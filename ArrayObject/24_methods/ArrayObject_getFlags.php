@@ -14,13 +14,13 @@ $std_prop_list->age = 23;
 echo "ARRAY_AS_PROPS flag - ArrayObject Properties:\n";
 print_r(get_object_vars($array_as_props)); 
 
-echo "\n\nARRAY_AS_PROPS flag - ArrayObject Intern Array:\n";
+echo "\n\n\nARRAY_AS_PROPS flag - ArrayObject Intern Array:\n";
 print_r($array_as_props->getArrayCopy()); 
 
-echo "\n\nSTD_PROP_LIST flag - ArrayObject Properties:\n";
+echo "\n\n\nSTD_PROP_LIST flag - ArrayObject Properties:\n";
 print_r(get_object_vars($std_prop_list)); 
 
-echo "\n\nSTD_PROP_LIST flag - ArrayObject Intern Array:\n";
+echo "\n\n\nSTD_PROP_LIST flag - ArrayObject Intern Array:\n";
 print_r($std_prop_list->getArrayCopy()); 
 
-?>
+
