@@ -5,7 +5,7 @@ $arrayObject = new ArrayObject(['a' => 'Apple', 'b' => 'Banana', 'c' => 'Cherry'
 
 // Obtener el iterador
 $iterator = $arrayObject->getIterator();
-// var_dump($iterator);
+var_dump($iterator);
 
 // Usar el iterador para recorrer el ArrayObject
 while ($iterator->valid()) {

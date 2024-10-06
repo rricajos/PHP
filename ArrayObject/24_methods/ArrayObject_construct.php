@@ -27,4 +27,4 @@ echo "Updated Name: {$arrayObject->name}\n";  // Outputs: Updated Name: Bob
 // Use getArrayCopy() to display the underlying array
 $copy = $arrayObject->getArrayCopy();
 print_r($copy);  // Outputs the array representation
-?>
+
