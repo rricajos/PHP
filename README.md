@@ -1,14 +1,12 @@
 # PHP 8.3 In-depth study
 
-In-depth study of the PHP language repository, testing examples of each function of this object-oriented programming language from version 5 (currently 8.3).
+This is an in-depth study of the PHP language repository, testing examples of each function of this object-oriented programming language from version 5 (currently 8.3).
 
 PHP is interpreted; in other words, it is not compiled, except when using tools or extensions like Zend Opcache or HHVM (HipHop Virtual Machine) run engines.
 
-> **For English readers:** Excuse me if some examples are in Spanish and for my grammar errors in both languages! 😄
-
-I humbly acknowledge that I am using ChatGPT to generate so much code on my own because it is a tool that allows me to study this language in great depth effectively.
-
 In fact, my goal is to know various ways to achieve the same result, questioning which one is the most optimal. Example - ¿Should I use native php array like [1,2,3] or the ArrayObject to get data from an external API?
+
+> **For English readers:** Excuse me if some examples are in Spanish and for my grammar errors in both languages! 😄
 
 ## Native PHP vs PHP Extensions/Modules
 
@@ -89,16 +87,14 @@ php -m
 | ASCII (0-127)                   | 1 byte          | `'a'`, `'b'`, `'1'`    |
 | Chars extended (128-2047)       | 2 bytes         | `'ñ'`, `'é'`           |
 | Chars of 3 bytes (2048-65535)   | 3 bytes         | `ñ`, `ç`, `ú`          |
-| Chars of 4 bytes (65536 y más)  | 4 bytes         | `🌍`, `𐍈`             |
+| Chars of 4 bytes (+65536)       | 4 bytes         | `🌍`, `𐍈`             |
 
 ## UTF 8 Char Sizes by Architecture examples
 
-| Character      | 64 bits arch       | 32 bits arch       |
-|----------------|--------------------|--------------------|
-| ASCII `'a'`    | 24 bytes           | 14 bytes           |
-| UTF-8 `'ñ'`    | 25 bytes           | 15 bytes           |
-| UTF-8 `'é'`    | 26 bytes           | 16 bytes           |
-| UTF-8 `'🌍'`   | 27 bytes           | 17 bytes           |
-
-
+| Character      | 64 bits arch       | 32 bits architecture       |
+|----------------|--------------------|----------------------------|
+| ASCII `'a'`    | 24 bytes           | 14 bytes                   |
+| UTF-8 `'ñ'`    | 25 bytes           | 15 bytes                   |
+| UTF-8 `'é'`    | 26 bytes           | 16 bytes                   |
+| UTF-8 `'🌍'`  | 27 bytes            | 17 bytes                    |
 
